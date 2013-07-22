@@ -24,26 +24,6 @@ class Mashup
         $this->facebookPageId = $facebookPageId;
     }
 
-    public function getFeed()
-    {
-        $stream = $this->getMergedStream();
-
-        foreach ($stream as $item) {
-            $entry = $this->feed->createEntry();
-
-            $entry->setTitle($item['title']);
-            $entry->setLink($item['link']);
-            $entry->addAuthor($item['author']);
-            $entry->setDateCreated($item['date_created']);
-            $entry->setDateModified($item['date_modified']);
-            $entry->setDescription($item['description']);
-            $entry->setContent($item['content']);
-
-            $this->feed->addEntry($entry);
-        }
-
-        return $this->feed;
-    }
 
     protected function getMergedStream()
     {
