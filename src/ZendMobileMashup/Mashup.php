@@ -25,7 +25,7 @@ class Mashup
     }
 
 
-    protected function getMergedStream()
+    public function getMergedStream()
     {
         $facebook = $this->getFacebookStream();
         $twitter  = $this->getTwitterStream();
