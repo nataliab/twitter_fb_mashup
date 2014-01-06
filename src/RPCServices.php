@@ -2,6 +2,17 @@
 use ZendServerGateway\Controller\AbstractActionController;
 use Zend\ServiceManager\ServiceManager;
 
+/**
+ * Class responsible for providing the feed.
+ * 
+ * My function
+ *
+ * @example /path/to/example.php How to use this function
+ * @example anotherexample.inc This example is in the "examples" subdirectory
+ * @author natalia.b
+ * @copyright Zend Technologies Ltd.
+ *
+ */
 class RPCServices extends AbstractActionController
 {
 

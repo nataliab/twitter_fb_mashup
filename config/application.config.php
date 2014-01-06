@@ -15,17 +15,17 @@ return array(
     ),
     'zend_mobile_mashup' => array(
         'facebook' => array(
-            'app_id' => 'your-facebook-app-id-here',
-            'app_secret' => 'your-facebook-app-secret-here'
+            'app_id' => '425446084238355',//'your-facebook-app-id-here',
+            'app_secret' => '88cb7f9232a012bd7b2ffc0e652aa7db'//'your-facebook-app-secret-here'
         ),
         'twitter' => array(
             'access_token' => array(
-                'token' => 'twitter-access-token-here',
-                'secret' => 'twitter-access-secret-here'
+                'token' => '245770498-rOpBeaXhD3I98H5XctJKZlzw2huX4utHh3uDdDUO',//twitter-access-token-here',
+                'secret' => 'tY2oaIW6oIUQJcayNFJotuvGZfNO7U2xBvLac0x4'//twitter-access-secret-here'
             ),
             'oauth_options' => array(
-                'consumerKey' => 'twitter-consumer-key-here',
-                'consumerSecret' => 'twitter-consumer-secret-here'
+                'consumerKey' => 'xDaZTuqVQq6txs8PeiYWvQ',//twitter-consumer-key-here',
+                'consumerSecret' => 'Pna6zdWgoKzv9uwjeuZpSpJhp5JMsyL2ZcjhQMPmao'//twitter-consumer-secret-here'
             )
         ),
         'feed' => array(
