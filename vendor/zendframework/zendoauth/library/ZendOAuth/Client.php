@@ -114,8 +114,9 @@ class Client extends HttpClient
     {
         if ($this->_streamingRequest) {
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 
     /**
@@ -130,8 +131,9 @@ class Client extends HttpClient
             $this->setHeaders(array('Content-Length' =>
                 $this->raw_post_data->getTotalSize()));
             return $this->raw_post_data;
+        } else {
+            return parent::prepareBody();
         }
-        return parent::prepareBody();
     }
 
     /**
@@ -221,8 +223,7 @@ class Client extends HttpClient
                     $this->_config,
                     $this->_getSignableParameters()
                 );
-                $requestHeaders = $this->getRequest()->getHeaders();
-                $requestHeaders->addHeaders(array('Authorization' => $oauthHeaderValue));
+                $this->setHeaders(array('Authorization' => $oauthHeaderValue));
                 break;
             case OAuth::REQUEST_SCHEME_POSTBODY:
                 if ($this->getRequestMethod() == HttpRequest::METHOD_GET) {
