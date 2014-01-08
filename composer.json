@@ -1,7 +1,8 @@
 {
   "require" : {
     "zendframework/zendframework" : "=2.2.1",
-    "zendframework/zendoauth" : "=2.0.1"
+    "zendframework/zendoauth" : "=2.0.1",
+    "zendframework/zendservice-twitter" : ">=2.1.0"
   },
   "keywords" : [ ],
   "autoload" : {

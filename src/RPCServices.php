@@ -16,6 +16,10 @@ use Zend\ServiceManager\ServiceManager;
 class RPCServices extends AbstractActionController
 {
 
+	/**
+	 * Returns the merged FB and Twitter feed
+	 * @return JSON formatted data
+	 */
     public function getFeedAction()
     {
         $services = new ServiceManager();
